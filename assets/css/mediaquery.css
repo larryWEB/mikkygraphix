@@ -1,0 +1,85 @@
+@media (min-width: 768px) {
+   
+  .logo-card{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    position:absolute;
+   padding:10px;
+    left:60px;
+  }
+ 
+  }
+ 
+  @media (min-width: 1024px) {
+  
+ 
+   #menu-bar{
+   display:flex;
+    flex-direction:row; 
+    z-index:1;
+    position:fixed;
+   height:0px;
+   background-color:transparent;
+     visibility: visible;
+     justify-content:end;
+     top:40px;
+      visibility: visible;
+     right:50px;
+   }
+   
+   
+   
+   .menu-btns{
+    visibility:hidden;
+   }
+   
+   
+   
+   
+   .nav-link-card{
+    font-weight:600;
+     font-family: 'Raleway', sans-serif;
+    top:20px;
+    font-size:14px;
+     display:inline-flex;
+     visibility: visible;
+          margin:15px;
+                  border:none;
+         }
+ 
+    .slide{
+            visibility: visible;
+           left:-40px;
+          }
+   
+   .nav-social{
+     display:none;
+   }
+   
+   
+   .nav-social img{
+    width:23px;
+    display:none;
+   }
+   
+   
+   .nav-link a{
+    text-decoration:none;
+    color:black;
+   }
+   
+   
+     
+          }
+     
+     
+          @media (min-width: 1321px) {
+ 
+           .slide{
+             visibility: visible;
+          
+           }
+ 
+ 
+          }

@@ -1,0 +1,306 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            MIKKY GRAHIX PORTFOLIO
+        </title>
+        <script src="assets/js/lightbox-plus-jquery.js"></script>
+        <link href="assets/css/lightbox.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/mediaquery.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+<link href="assets/css icon/all.css" rel="stylesheet">
+    </head>
+    <body>
+   
+
+
+        <header>
+            <div class="logo-card">
+            <div class="brand-logo"><img class="logo" src="assets/images/looogoo.PNG" width="40"> </div>
+            <div class="brand-name">MIKKYGRAPHIX</div>
+            </div>
+            
+        
+            <div class="menu-btns">
+             <img class="open"  src="https://img.icons8.com/ios/50/000000/menu--v1.png" width="40"/>
+            <img  id="close" class="hide"   src="https://img.icons8.com/ios-filled/50/000000/delete-sign--v1.png"  width="40"/>
+            </div>
+            
+            <div id="menu-bar" class="slide">
+            
+                <div class="nav-link-card">
+                    <div class="nav-link">   <a href="index.html">HOME</a></div>
+                    <div class="nav-link">   <a href="portfolio.html">PORTFOLIO</a></div>
+                <div class="nav-link">   <a href="about.html">ABOUT</a></div>
+                <div class="nav-link">   <a href="testimonial.html">TESTIMONONIALS</a></div>
+                <div class="nav-link"> <a href="contact.html">CONTACT</a></div>
+                </div>
+            
+                <span class="nav-social">
+                    <a href="http://www.instagram.com/mikkygraphix14/"><i class="fa-brands fa-instagram"></i></a>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png"/>
+                    <a href="http://www.youtube.com/channel/UC1ypb5r8d_GuMF7Wu7KZLFw"><img src="https://img.icons8.com/ios-filled/50/000000/youtube.png"/></a>
+                </span>
+            
+            </div>
+            
+            </header>
+
+
+
+            <div class="chat-wa">
+                <a href="http://wa.me/message/H5CW76IKB5VUB1"><img class="whatsapp-img" src="assets/images/Black-and-white-Whatsapp-logo-vector-PNG.png" width="65"></a>
+            </div>
+
+
+<section id="portfolio">
+    <div class="portfolio-head-card">
+<h1>Adeyeye Michael</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Sed facilis quidem consequuntur! Voluptatem maxime nemo optio facere quo. Rem,
+     blanditiis at nobis minima deleniti quasi saepe optio eaque sit distinctio.</p>
+    </div>
+
+
+<div class="control">
+
+<button class="filter active" data-filter="*">ALL</button>
+<button class="filter" data-filter=".smudge">SMUDGE PAINTING</button>
+<button class="filter"data-filter=".design">BRAND DESIGN</button>
+<button class="filter" data-filter=".flyer">FLYER</button>
+<button class="filter" data-filter=".logo">LOGO</button>
+
+
+</div>
+
+
+<div class="image-card">
+<div class="mix flyer"> <img src="assets/images/Gratitude1.png" alt="">
+</div>
+<div class="mix logo">
+    <img src="assets/images/digging deep jth1.png" alt="">
+</div>
+<div class="mix design">
+    <img src="assets/images/MENU.png" alt="">
+</div>
+<div class="mix smudge">
+    <img src="assets/images/mcteesmile_1.png" alt="">
+</div>
+<div class="mix logo">
+    <img src="assets/images/active galley wall RED.png" alt="">
+</div>
+<div class="mix design">
+    <img src="assets/images/NEW FOOD ACTIVE.jpg" alt="">
+</div>
+<div class="mix smudge">
+    <img src="assets/images/Oluwatosin leigh11.png" alt="">
+</div>
+<div class="mix logo">
+    <img src="assets/images/LOGOOO.jpg" alt="">
+</div>
+<div class="mix flyer">
+    <img src="assets/images/jesus feast ADJ.png" alt="">
+</div>
+<div class="mix logo">
+    <img src="assets/images/os device.jpg" alt="">
+</div>
+
+</div>
+</section>
+
+
+
+
+
+
+
+
+<footer>
+<p class="foot-note">Created by M.O.V.E</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+<script>
+  $(document).ready(function () {
+    var container = mixitup(".image-card");
+  });
+</script>
+
+
+
+<script>
+
+let open = document.querySelector('.open');
+let menu = document.querySelector('#menu-bar');
+let  close = document.querySelector('#close');
+
+
+//A and B represent (open and close)
+//The reason for formatting the function this way is......
+ //to avoid repitition incase i have  many buttons i want to use same function for!
+common = (a,b,c) => {
+  a.addEventListener('click', () => { 
+    //I  created a property(.hide) in css and i set the value to(hidden)
+    //That is what i will be using to (hide) and at the same time (display) the open menu and close ICONs
+    a.classList.toggle('hide');  
+    b.classList.toggle('hide');   
+
+    if(c == 'slide-in'){
+      menu.classList.toggle('slide')
+    }
+
+    if(c == 'slide-out'){
+      menu.classList.toggle('slide')
+    }
+  })
+}
+
+//if you dont repeat the call vice-versa it wont work
+common(open,close,'slide-in'); //when i click on (open menu) = i want you to display the close button
+common(close,open,'slide-out');//when i click on (close) = i want you to display the open menu button
+
+
+
+</script>
+
+<style>
+#portfolio{
+padding-top: 150px;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.portfolio-head-card{
+    background-image: url('/assets/images/gallery\ 2.JPG');
+    background-blend-mode: overlay;
+  background-size: cover;
+    background-repeat: no-repeat;
+    height:350px;
+    margin-top:-90px;
+    background-color:rgba(0, 0, 0, 0.694);
+}
+
+
+.portfolio-head-card h1{
+text-align: center;
+color:white;
+padding-top:50px;
+font-size: 30px;
+}
+
+.portfolio-head-card p{
+padding:30px;
+text-align: center;
+color:white;
+
+}
+
+
+.active{
+  background-color: goldenrod;
+}
+
+
+.control{
+    display:block;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+margin-top:-80px;
+z-index: 999;
+margin-left:10px;
+}
+
+.control button{
+    font-weight:400px;
+    border:1px solid white;
+    background-color: transparent;
+    color:white;
+    line-height:1.6;
+    border-radius:10px;
+font-size:small;
+width:inherit;
+padding: 5px;
+}
+
+
+
+
+.image-card{
+    padding:50px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+.mix img{
+    width:250px;
+    height:250px;
+}
+
+@media (min-width: 700px) {
+
+    .portfolio-head-card p{
+padding-left:120px;
+padding-right:120px;
+text-align: center;
+color:white;
+
+}
+
+.image-card{
+    padding:50px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top:-30px;
+}
+
+
+
+
+}
+
+@media (min-width: 1024px) {
+
+.portfolio-head-card p{
+padding-left:180px;
+padding-right:180px;
+
+
+}
+
+}
+
+
+@media (min-width: 1321px) {
+
+.portfolio-head-card p{
+padding-left:350px;
+padding-right:350px;
+
+
+}
+
+}
+
+
+</style>
+
+
+    </body>
+</html>

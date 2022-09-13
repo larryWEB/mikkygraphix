@@ -1,0 +1,244 @@
+
+*{
+  margin:0px;
+  padding:0px;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+ }
+ 
+ 
+ /* HEADER STYLE RULES */
+ header{
+   display:flex;
+   justify-content:space-between;
+   background-color:white;
+   height:60px;
+   position:fixed;
+   width:100%;
+   z-index: 9999999;
+   top:0px;
+   box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.251);
+ }
+ 
+ .logo-card{
+   display:flex;
+   align-items:center;
+   gap:15px;
+   position:absolute;
+  padding:10px;
+ }
+ 
+ .menu-btns{
+   position:absolute;
+   right:20px;
+  top:10px;
+ }
+ 
+ /* END OF
+ HOME HEADER 
+ STYLE RULES */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ #menu-bar{
+ display:flex;
+  flex-direction:column; 
+  z-index:1;
+  position:absolute;
+  background-color:white;
+  height:350px;
+  transition: all 0.4s ease;
+  top:60px;
+ width:100%;
+  align-items:center;
+  gap:30px;
+  transition: 0.5s ease-in-out;
+  right:0px;
+ }
+ 
+
+ 
+ 
+ 
+ 
+ 
+ .menu-btns:hover{
+ color: rgba(181, 225, 117, 0.961);
+ }
+ 
+ 
+ 
+ .slide{
+  left:-100%;
+ }
+ 
+ .hide{
+  visibility:hidden;
+ }
+ 
+ .open{
+  position:absolute;
+ }
+ 
+ .nav-link-card{
+  padding-top:40px;
+ }
+ 
+ 
+ .nav-link{
+  margin:30px;
+  font-weight:600;
+   font-family: 'Raleway', sans-serif;
+  text-align:center;
+  position:relative;
+  top:-30px;
+  font-size:14px;
+ }
+ 
+ .nav-social{
+   top:-45px;
+    position:relative;
+  display:grid;
+  grid-template-columns: repeat(4,25px);
+  gap:25px;
+ }
+ 
+ 
+ .nav-social i{
+  font-size:23px;
+ 
+ }
+ 
+ .nav-social img{
+  width:23px;
+  
+ }
+ 
+ 
+ .nav-link a{
+  text-decoration:none;
+  color:#e19a00;
+ }
+ 
+ a{
+  text-decoration:none;
+;
+ }
+
+
+ .img-link{
+ width: 10%;
+ height:auto;
+ }
+ 
+ 
+ .works img:hover{
+   transform:scale(1.1)
+  }
+  
+ 
+  .chat-wa{
+   position:fixed;
+    top:93%;
+    display:flex;
+    justify-content:right;
+    align-items:right;
+   right:20px;
+   z-index: 999;
+   }
+   
+ 
+   
+   .whatsapp-img{
+   border-radius:100px;
+   height:40px;
+    width:40px;
+   margin-top:-9px;
+   animation: scaleUp 3s ease-in-out infinite;
+   z-index: 999;
+   }
+ 
+ 
+ 
+ 
+ 
+ /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
+ 
+  .images{
+  width:130px;
+  height:190px;
+  border:2px solid rgba(172, 255, 47, 0.961);
+  }
+  
+  .mother-container{
+   z-index:-10;
+     margin-top:390px;
+  }
+ 
+  .personal-info{
+ color:white;
+     font-family:system-ui;
+   padding:15px;
+   margin-top:-25px;
+   background-color:rgba(0, 0, 0, 0.057);
+     
+  }
+  
+  .personal-info:hover{
+   color:yellowgreen;
+   cursor: pointer;
+  }
+ 
+ 
+  .name{
+ font-size:40px;
+     font-weight:300;
+  }
+ 
+  .title{
+ font-size:15px;
+   font-weight:300;
+  }
+ 
+  .social{
+   display:flex;
+   gap:18px;
+   margin-top:15px;
+  }
+ 
+ 
+  .works{
+ margin-top:20px;
+     display:grid;
+     grid-template-columns: repeat(2,130px);
+     justify-content:center;
+     align-items:center;
+     gap:12px;
+  }
+ 
+ 
+ footer{
+   background-color:rgba(0, 0, 0, 0.321);
+  height:70px;
+ position:relative;
+  width:100%;
+  top:100%;
+  margin-top:50px;
+ }
+ 
+ .foot-note{
+ position:relative;
+  color:yellowgreen;
+  text-align:center;
+  top:35px;
+  font-weight:bold;
+ }
+ 
+ /* ABOUT FOOTER*/
+ 
+ 
+ 
