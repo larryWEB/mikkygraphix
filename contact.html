@@ -1,0 +1,360 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            MIKKY GRAHIX PORTFOLIO
+        </title>
+        <script src="assets/js/lightbox-plus-jquery.js"></script>
+        <link href="assets/css/lightbox.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/mediaquery.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+<link href="assets/css icon/all.css" rel="stylesheet">
+    </head>
+    <body>
+
+  
+<header>
+    <div class="logo-card">
+    <div class="brand-logo"><img class="logo" src="assets/images/looogoo.PNG" width="40"> </div>
+    <div class="brand-name">MIKKYGRAPHIX</div>
+    </div>
+    
+    
+    <div class="menu-btns">
+     <img class="open"  src="https://img.icons8.com/ios-filled/50/000000/menu--v1.png" width="40"/>
+    <img  id="close" class="hide"   src="https://img.icons8.com/ios-filled/50/000000/delete-sign--v1.png"  width="40"/>
+    </div>
+    
+    <div id="menu-bar" class="slide">
+    
+        <div class="nav-link-card">
+            <div class="nav-link">   <a href="index.html">HOME</a></div>
+            <div class="nav-link">   <a href="portfolio.html">PORTFOLIO</a></div>
+        <div class="nav-link">   <a href="about.html">ABOUT</a></div>
+        <div class="nav-link">   <a href="testimonial.html">TESTIMONONIALS</a></div>
+        <div class="nav-link"> <a href="contact.html">CONTACT</a></div>
+        </div>
+
+        <span class="nav-social">
+            <a href="http://www.instagram.com/mikkygraphix14/"><i class="fa-brands fa-instagram"></i></a>
+            <i class="fa-brands fa-facebook-f"></i>
+            <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png"/>
+            <a href="http://www.youtube.com/channel/UC1ypb5r8d_GuMF7Wu7KZLFw"><img src="https://img.icons8.com/ios-filled/50/000000/youtube.png"/></a>
+        </span>
+    </div>
+    
+    </header>      
+
+    <div  class="scrollTop">Top</div>
+
+    <div class="chat-wa">
+        <a href="http://wa.me/message/H5CW76IKB5VUB1"><img class="whatsapp-img" src="assets/images/Black-and-white-Whatsapp-logo-vector-PNG.png" width="65"></a>
+    </div>
+
+
+<section class="contact-contact">   
+
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126630.39232592733!2d3.833505252894215!3d7.
+        331448485106243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1039929cde15d621%3A0x76c6583d3422201e!2sAkintoye
+        %20St%2C%20200258%2C%20Ibadan!5e0!3m2!1sen!2sng!4v1662595936125!5m2!1sen!2sng"
+         width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+
+    <h1 class="contact-head">CONTACT</h1>
+    
+    
+    <div class="form-add-card">
+    
+    <form id="contact-form" action="https://formsubmit.co/mikkygrapix@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="A CUSTOMER HAS A MESSAGE FOR YOU">
+    <input type="hidden" name="_next" value="https://mikkygrapix.art/thankyoucontact.html">
+
+    <span class="name-card">
+        <label for="first-name">First Name</label><br>
+    <input type="text" name="FName" id="first-name" required><br>
+
+    <label for="last-name">Last Name</label><br>
+    <input type="text" name="LName"  id="last-name" required>
+    </span>
+    <br>
+    <label for="Mobile No">Mobile No</label><br>
+    <input type="number" name="Number" id="your-number" required>
+    <br>
+    <label for="email">Email *</label><br>
+    <input type="email" name="Email" id="email" required>
+    <br>
+    <label for="message">Write your message</label><br>
+    <input type="text"  name="Message"  id="message" required>
+    <br>
+    <button class="contact-submit">SUBMIT</button>
+    </form>
+    
+    </div>
+    </section>  
+    
+
+
+
+
+
+<footer>
+    <p class="foot-note">Created by <a href="http://wa.me/message/B4BREKT4IJVZI1">  M.O.V.E </a></p>
+    </footer>
+    
+    <script>
+
+let open = document.querySelector('.open');
+let menu = document.querySelector('#menu-bar');
+let  close = document.querySelector('#close');
+
+
+//A and B represent (open and close)
+//The reason for formatting the function this way is......
+ //to avoid repitition incase i have  many buttons i want to use same function for!
+common = (a,b,c) => {
+  a.addEventListener('click', () => { 
+    //I  created a property(.hide) in css and i set the value to(hidden)
+    //That is what i will be using to (hide) and at the same time (display) the open menu and close ICONs
+    a.classList.toggle('hide');  
+    b.classList.toggle('hide');   
+
+    if(c == 'slide-in'){
+      menu.classList.toggle('slide')
+    }
+
+    if(c == 'slide-out'){
+      menu.classList.toggle('slide')
+    }
+  })
+}
+
+//if you dont repeat the call vice-versa it wont work
+common(open,close,'slide-in'); //when i click on (open menu) = i want you to display the close button
+common(close,open,'slide-out');//when i click on (close) = i want you to display the open menu button
+
+
+
+
+let toUP = document.querySelector(".scrollTop");
+
+window.onscroll = function() {scrollFunction()};
+
+ function scrollFunction(){
+if (document.body.scrollTop > 1050 || document.documentElement.scrollTop > 1050){
+    toUP.style.display = "block";
+}else {
+    toUP.style.display = "none";
+}
+};
+scrollFunction();
+
+toUP.addEventListener("click", () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
+
+document.addEventListener("scroll", (e) =>{
+scrollFunction();
+})
+
+</script>
+
+
+<style>
+
+.map{
+width:100%;
+height:500px;
+position:relative;
+
+}
+
+
+.map iframe{
+width:100%;
+height:400px;
+}
+
+
+
+.contact-contact{
+margin-top:50px;
+padding-top:80px;
+}
+
+
+.contact-head{
+ padding:20px;
+ text-align: center;
+}
+
+
+.form-add-card{
+display:flex;
+flex-direction: column;
+justify-content:center;
+align-items: center;
+margin:20px;
+margin-top:50px;
+}
+
+.contact-form{
+    margin:20px;
+}
+
+
+
+input{
+    width:200px;
+    height:35px;
+    margin:20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+
+ label{
+    margin:20px;
+    position:relative;
+    top:10px;
+}
+
+
+.contact-submit{
+    width:100px;
+    margin:20px;
+    border-radius:10px;
+    background-color:black;
+    color:white;
+    padding: 15px;
+    margin-top:40px;
+    position: relative;
+  left:20%;
+}
+
+
+
+footer{
+  background-color:rgba(0, 0, 0, 0.829);
+ height:70px;
+position:relative;
+ width:100%;
+top:10%;
+}
+
+.foot-note{
+position:relative;
+ color:yellowgreen;
+ text-align:center;
+ top:35px;
+ font-weight:bold;
+}
+
+@media (min-width: 600px) {
+
+    input{
+    width:300px;
+   
+}
+
+}
+
+
+@media (min-width: 768px) {
+
+input{
+width:400px;
+}
+
+.contact-submit{
+  left:40%;
+}
+
+
+
+}
+
+
+@media (min-width: 900px) {
+
+input{
+width:500px;
+}
+
+.contact-submit{
+  left:40%;
+}
+
+
+
+}
+
+
+
+
+@media (min-width: 1024px) {
+
+    .contact-contact{
+margin-top:100px;
+
+}
+
+
+
+    input{
+width:560px;
+}
+
+
+.name-card input{
+width:200px;
+position:relative;
+left:-120px;
+}
+
+.name-card label{
+position:relative;
+top:-20px;
+}
+
+.name-card{
+display: flex;
+}
+
+.form-add-card{
+display:flex;
+flex-direction: column;
+justify-content:center;
+align-items: center;
+margin:20px;
+margin-left:150px;
+margin-top:90px;
+}
+
+.contact-submit{
+  left:30%;
+  width:200px;
+}
+
+
+}
+
+
+
+
+</style>
+
+
+    
+        </body>
+    </html>
